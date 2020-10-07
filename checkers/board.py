@@ -16,4 +16,4 @@ class Board:
 				pygame.draw.rect(win, CLR1, (row * SQUARE_SIZE, col * SQUARE_SIZE, SQUARE_SIZE, SQUARE_SIZE))
 			for col in range ((row+1) % 2, ROWS, 2):
 				pygame.draw.rect(win, CLR2, (row * SQUARE_SIZE, col * SQUARE_SIZE, SQUARE_SIZE, SQUARE_SIZE))
-		
+

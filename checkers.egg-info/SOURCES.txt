@@ -1,0 +1,9 @@
+setup.py
+checkers/__init__.py
+checkers/board.py
+checkers/constants.py
+checkers.egg-info/PKG-INFO
+checkers.egg-info/SOURCES.txt
+checkers.egg-info/dependency_links.txt
+checkers.egg-info/requires.txt
+checkers.egg-info/top_level.txt
