@@ -30,9 +30,10 @@ class Piece:
 	def draw(self, win):
 		radius = SQUARE_SIZE // 2 - self.PADDING
 		outline_color = BLACK if self.color == WHITE else WHITE
-		pygame.draw.circle(win, outline_color, (self.x, self.y, ), radius + self.OUTLINE)
-		pygame.draw.circle(win, self.color, (self.x, self.y, ), radius)
+		# pygame.draw.circle(win, outline_color, (self.x, self.y), radius + self.OUTLINE)
+		# pygame.draw.circle(win, self.color, (self.x, self.y), radius)
 
 
 	def __repr__(self):
 		return str(self.color)
+
