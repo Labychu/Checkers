@@ -11,6 +11,6 @@ WHITE = (255, 255, 255)
 BLUE = (0, 0, 255)
 CLR1 = (237, 191, 104)
 CLR2 = (122, 64, 20)
-BG = (43, 64, 48)
+GREEN = (43, 64, 48)
 
 CROWN = pygame.transform.scale(pygame.image.load("assets/crown.png"), (44, 25))

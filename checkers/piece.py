@@ -12,8 +12,6 @@ class Piece:
 		self.color = color
 		self.king = False
 
-		self.direction = 1 if self.color == WHITE else -1
-
 		self.x = 0
 		self.y = 0
 		self.calc_pos()
@@ -24,6 +22,11 @@ class Piece:
 
 	def make_king(self):
 		self.king = True
+
+	def move(self, row , col):
+		self.row = row
+		self.col = col
+		self.calc_pos()
 
 	def draw(self, win):
 		radius = SQUARE_SIZE // 2 - self.PADDING
