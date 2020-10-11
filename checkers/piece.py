@@ -3,7 +3,7 @@ from .constants import BLACK, WHITE, SQUARE_SIZE, CROWN
 
 
 class Piece:
-	PADDING = 10
+	PADDING = 10  # 
 	OUTLINE = 2
 
 	def __init__(self, row, col, color):

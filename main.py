@@ -1,5 +1,5 @@
 import pygame
-from checkers.constants import WIDTH, HEIGHT, SQUARE_SIZE, BLACK, WHITE
+from checkers.constants import WIDTH, HEIGHT, SQUARE_SIZE
 from checkers.game import Game
 from checkers.board import Board
 
@@ -22,7 +22,7 @@ def main():
 		return mouse_row, mouse_col
 
 	while run:
-		clock.tick(FPS)
+		# clock.tick(FPS)
 		if game.winner() is not None:
 			print(f"The winner is {game.winner()}!")
 			break
@@ -33,7 +33,7 @@ def main():
 			if event.type == pygame.MOUSEBUTTONDOWN:
 				pos = pygame.mouse.get_pos()
 				row, col = get_row_col_from_mouse(pos)
-				# if game.turn == BLACK:
+				# send the position of the selected square
 				game.select(row, col)
 		game.update()
 	pygame.quit()
